@@ -1,0 +1,41 @@
+.custom-modal-dialog-style {
+  height: 500; /* Adjusted height */
+
+}
+
+.modal-text {
+  font-size: 1.1rem; /* Adjust the font size as needed */
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.page {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(30% - 0px);;
+  height: 200px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}

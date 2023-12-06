@@ -1,0 +1,35 @@
+<div class="page">
+  <div class="card">
+    <h3>Enter your 4-digit-code</h3>
+    <form #registerForm="ngForm" (ngSubmit)="admit(modalTemplate)" autocomplete="off">
+      <input name="code"
+      [(ngModel)]="model.code"
+      class="form-control me-2 mb-2"
+      type="text"
+      placeholder="4-digit-code">
+
+      <button class="btn btn-outline-dark d-block mx-auto">Submit</button>
+    </form>
+  </div>
+
+
+  <ng-template #modalTemplate role="document" let-modal>
+    <div class="modal d-flex align-items-center">
+      <div class="modal-dialog custom-modal-dialog-style" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title mx-auto">Propella Business Incubator</h4>
+          </div>
+          <div class="modal-body text-center">
+            <p class="modal-text">{{ text }}<br/></p>
+            <h2></h2>
+            <p>With love from Propella!</p>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-dark align-center" (click)="closePopup()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>
